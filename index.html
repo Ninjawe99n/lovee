@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لحبيبتي 💕</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- خلفية القلوب المتساقطة -->
+    <div class="hearts-bg" id="heartsContainer"></div>
+
+    <!-- جزيئات النجوم المتلألئة -->
+    <div class="sparkles" id="sparklesContainer"></div>
+
+    <!-- صفحة الدخول -->
+    <div class="login-page" id="loginPage">
+        <div class="login-glow"></div>
+        <div class="login-box">
+            <div class="login-icon">
+                <i class="fas fa-heart"></i>
+            </div>
+            <h2>أهلاً بقلبي اكتبي الباسورد 😂💝</h2>     
+            <div class="input-wrapper">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="passwordInput" placeholder="أدخل كلمة السر">
+            </div>
+            <button onclick="checkPassword()" class="login-btn">
+                <span> 😂💝الدخول </span>
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <p id="errorMsg" class="error-msg">
+                <i class="fas fa-times-circle"></i>
+                كلمة السر ليست صحيحة
+            </p>
+        </div>
+        <div class="login-decoration">
+            <div class="deco-circle"></div>
+            <div class="deco-circle"></div>
+            <div class="deco-circle"></div>
+        </div>
+    </div>
+
+    <!-- المحتوى الرئيسي -->
+    <div class="main-content" id="mainContent">
+        <!-- ترحيب متحرك -->
+        <div class="welcome-section">
+            <div class="welcome-glow"></div>
+            <h1 class="welcome-title">
+                <span class="letter">لحبيبتي الغالية ❤️رودينا</span>
+            </h1>
+        </div>
+
+        <!-- العد التنازلي -->
+            <section class="counter-card">
+    <div class="counter-header">
+        <i class="fas fa-infinity"></i>
+        <span>
+            مع بعض من 23 يناير 2025... والعداد شغال لحد آخر نفس ♾️
+            <br>
+            <strong class="forever-text">
+                العداد ده هيفضل يعد لحد ما نموت ❤️
+            </strong>
+        </span>
+        <i class="fas fa-heart"></i>
+    </div>
+            <div class="counter-date">23 يناير 2025</div>
+            <div class="counter">
+                <div class="counter-item">
+                    <div class="counter-number" id="days">0</div>
+                    <div class="counter-label">يوم</div>
+                </div>
+                <div class="counter-separator">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number" id="hours">0</div>
+                    <div class="counter-label">ساعة</div>
+                </div>
+                <div class="counter-separator">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number" id="minutes">0</div>
+                    <div class="counter-label">دقيقة</div>
+                </div>
+                <div class="counter-separator">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number" id="seconds">0</div>
+                    <div class="counter-label">ثانية</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- رسالة الحب -->
+        <section class="reasons-section">
+    <h2>كلام من قلبي ليكي ❤️</h2>
+
+    <div class="love-cards">
+
+        <div class="love-card">
+            <img src="love2.jfif" alt="صورة رومانسية">
+            <p>حتة معاكي بحس إن الكون كله بيرقص حوالينا 🌟</p>
+        </div>
+
+        <div class="love-card">
+            <img src="love3.jfif" alt="صورة رومانسية">
+            <p>كل لحظة معاكي هي أحلى لحظة في عمري ✨</p>
+        </div>
+
+        <div class="love-card">
+            <img src="love1.jfif" alt="صورة رومانسية">
+            <p>الوقت يطير وإحنا مع بعض وما نحس بيه 💕</p>
+        </div>
+
+        <div class="love-card">
+            <img src="love4.jfif" alt="صورة رومانسية">
+            <p>أنتِ أجمل شيء حدث لي في حياتي كلها 💖</p>
+        </div>
+
+    </div>
+</section>
+
+        <!-- أسباب الحب -->
+       <section class="reasons-section">
+    <h2 class="love-title">ليه أنا بحبك؟ 💖</h2>
+
+    <div class="love-box">
+        <p id="loveReason">لإن وجودك راحة وأمان ❤️</p>
+    </div>
+
+    <button class="next-btn" onclick="nextReason()">التالي 💕</button>
+</section>
+
+<section class="romantic-quotes">
+    <h2 class="romantic-title">كلمات من قلبي ليكي 🤍</h2>
+
+    <div class="quote-box">
+        <p>عيونك وطن، وكل ما بتوه برجع لها وألاقي نفسي من جديد.</p>
+    </div>
+
+    <div class="quote-box">
+        <p>وجودك في حياتي مش مجرد صدفة… ده أجمل قدر اختارهولي ربنا.</p>
+    </div>
+
+    <div class="quote-box">
+        <p>لما تضحكي، الدنيا كلها تنور وكأنها مستنية ابتسامتك.</p>
+    </div>
+
+    <div class="quote-box">
+        <p>إنتِ مش بس حبيبتي… إنتِ الأمان اللي بيلف قلبي من غير ما أحس.</p>
+    </div>
+
+    <div class="quote-box">
+        <p>كل مرة أمسك إيدك، بحس إن مفيش حاجة في الدنيا ممكن تهزني.</p>
+    </div>
+
+    <div class="quote-box">
+        <p>في صوتك راحة غريبة… كأن كل تعب الدنيا بيختفي أول ما أسمعه.</p>
+    </div>
+
+    <div class="quote-box">
+        <p>لو للحب عنوان، هيبقى اسمك من غير تفكير.</p>
+    </div>
+
+    <div class="quote-box">
+        <p>وسط زحمة الناس، قلبي عمره ما شاف غيرك.</p>
+    </div>
+
+    <div class="quote-box">
+        <p>حتى في أسوأ أيامي، فكرة إنك معايا بتطمني.</p>
+    </div>
+
+    <div class="quote-box">
+        <p>لو رجع بيا الزمن ألف مرة… في كل مرة هختارك إنتِ.</p>
+    </div>
+
+    <div class="quote-box">
+        <p>إنتِ مش نصي التاني… إنتِ روحي اللي لقيتها بعد ما كانت تايهة.</p>
+    </div>
+
+</section>  
+        
+
+        <!-- الفوتر -->
+        <div class="footer">
+            <div class="footer-hearts">
+                <span>💕</span>
+                <span>💖</span>
+                <span>💗</span>
+            </div>
+            <button class="open-letter-btn" onclick="openLetter()">
+لسة مخلصناش افتحي دا 😂❤️</button>
+
+<div class="letter-overlay" id="letterOverlay">
+    <div class="envelope" id="envelope">
+        <div class="envelope-flap"></div>
+        <div class="envelope-body"></div>
+    </div>
+
+    <div class="big-letter" id="bigLetter">
+        <span class="close-btn" onclick="closeLetter()">✖</span>
+        <div class="letter-text">
+            <h2>إلى حبيبة قلبي ♥️</h2>
+            <p>
+                ربنا يعلم أنا بحبك قد إيه وإن حبي ليكي ميتوصفش،
+                وأنا معاكي بحس إني شخص تاني خالص…
+                انتي ضحكتي… سندي… حضني الوحيد… وطني…
+                وجودك في حياتي أكبر نعمة،
+                وربنا يخليكي ليا وميحرمنيش منك أبداً يا قلبي ♥️✨
+            </p>
+        </div>
+    </div>
+</div>
+
+         <p class="forever">بحبك إلى الأبد  ♾️</p>
+            <div class="footer-line"></div>
+        </div>
+    </div>
+
+    <!-- Modal إضافة سبب جديد -->
+    <div class="modal" id="reasonModal">
+        <div class="modal-overlay" onclick="closeModal()"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-heart"></i>
+                <h3>أضف سبب جديد لحبك</h3>
+                <i class="fas fa-heart"></i>
+            </div>
+            <div class="modal-body">
+                <div class="input-group">
+                    <label>الإيموجي</label>
+                    <input type="text" id="newReasonIcon" placeholder="مثل: 😊" maxlength="10">
+                </div>
+                <div class="input-group">
+                    <label>السبب</label>
+                    <textarea id="newReasonText" placeholder="اكتب السبب الذي تحبها..." rows="3"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-btn cancel" onclick="closeModal()">
+                    <i class="fas fa-times"></i>
+                    إغلاق
+                </button>
+                <button class="modal-btn confirm" onclick="addNewReason()">
+                    <i class="fas fa-check"></i>
+                    إضافة
+                </button>
+            </div>
+        </div>
+    </div>
+ <audio id="bgMusic" loop>
+    <source src="music.mpeg" type="audio/mpeg">
+</audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
